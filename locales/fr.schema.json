@@ -13,6 +13,9 @@
         "text": {
           "label": "Texte"
         },
+        "text2": {
+          "label": "Texte 2"
+        },
         "button_background": {
           "label": "Arrière-plan plein du bouton"
         },

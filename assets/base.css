@@ -869,6 +869,11 @@ summary::-webkit-details-marker {
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
+.grid.column-direction {
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (min-width: 750px) {
   .grid {
     column-gap: var(--grid-desktop-horizontal-spacing);
@@ -1563,7 +1568,7 @@ details[open] > .share-button__fallback {
   font-size: 1.6rem;
   width: 100%;
   box-sizing: border-box;
-  transition: box-shadow var(--duration-short) ease;
+  transition: box-shadow var(--duration-default) ease;
   border-radius: var(--inputs-radius);
   height: 4.5rem;
   min-height: calc(var(--inputs-border-width) * 2);
@@ -1586,7 +1591,7 @@ details[open] > .share-button__fallback {
   left: 0;
   border-radius: var(--inputs-radius-outset);
   box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset)
-    var(--inputs-shadow-blur-radius) rgba(var(--color-second));
+    var(--inputs-shadow-blur-radius) rgba(var(--color-secondary));
   z-index: -1;
 }
 
@@ -1604,8 +1609,8 @@ details[open] > .share-button__fallback {
   left: var(--inputs-border-width);
   border: 0.1rem solid transparent;
   border-radius: var(--inputs-radius);
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-second));
-  transition: box-shadow var(--duration-short) ease;
+  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-secondary));
+  transition: box-shadow var(--duration-default) ease;
   z-index: 1;
 }
 
@@ -1687,7 +1692,7 @@ details[open] > .share-button__fallback {
   position: relative;
   width: 100%;
   display: flex;
-  transition: box-shadow var(--duration-short) ease;
+  transition: box-shadow var(--duration-default) ease;
 }
 
 .customer .field {
@@ -1704,7 +1709,7 @@ details[open] > .share-button__fallback {
   text-align: left;
   padding: 1.5rem;
   margin: var(--inputs-border-width);
-  transition: box-shadow var(--duration-short) ease;
+  transition: box-shadow var(--duration-default) ease;
 }
 
 .field__label,
@@ -1715,10 +1720,15 @@ details[open] > .share-button__fallback {
   margin-bottom: 0;
   pointer-events: none;
   position: absolute;
-  transition: top var(--duration-short) ease, font-size var(--duration-short) ease;
-  color: rgba(var(--color-foreground), 0.75);
+  transition: top var(--duration-default) ease, font-size var(--duration-default) ease, font-size var(--duration-default) ease;
+  color: rgba(var(--color-secondary));
   letter-spacing: 0.1rem;
   line-height: 1.5;
+  font-weight: 600;
+}
+
+.field:hover .field__label {
+  color: rgba(var(--color-foreground));
 }
 
 .field__input:focus ~ .field__label,
@@ -3566,4 +3576,30 @@ details-disclosure > details {
   100% {
     transform: translateX(100%) scaleX(0);
   }
+}
+
+/*PERSONNAL ADDS*/
+button.icon-chevron-right-circle svg {
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+button.icon-chevron-right-circle svg path {
+  fill: rgba(var(--color-background));
+}
+
+.icon-chevron-right-circle:before {
+  content: "";
+  background: rgba(var(--color-secondary));
+  width: 2.8rem;
+  height: 2.8rem;
+  position: absolute;
+  z-index: -1;
+  border-radius: 100%;
+  left: 0.7rem;
+  transition: background var(--duration-default) ease;
+}
+
+.field:hover .icon-chevron-right-circle:before {
+  background: rgba(var(--color-foreground));
 }

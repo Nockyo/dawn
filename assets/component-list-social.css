@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  gap: 3rem;
 }
 
 @media only screen and (max-width: 749px) {
@@ -11,15 +12,18 @@
 }
 
 .list-social__item .icon {
-  height: 2.2rem;
-  width: 2.2rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .list-social__link {
   align-items: center;
   display: flex;
-  padding: 1.1rem;
-  color: rgb(var(--color-foreground));
+  padding: 0.4rem;
+  color: rgba(var(--color-background));
+  background: rgba(var(--color-secondary));
+  border-radius: 100%;
+  transition: background var(--duration-default) ease;
 }
 
 .utility-bar .list-social__link {
@@ -27,6 +31,6 @@
   height: 3.8rem;
 }
 
-.list-social__link:hover .icon {
-  transform: scale(1.07);
+.list-social__link:hover{
+  background: rgba(var(--color-foreground));
 }

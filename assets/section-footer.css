@@ -246,6 +246,11 @@
   }
 }
 
+.footer-block--socials {
+  justify-content: center;
+  display: flex;
+}
+
 .footer__localization {
   display: flex;
   flex-direction: row;

@@ -1221,7 +1221,7 @@ button.shopify-payment-button__button--unbranded {
   font-size: 1.5rem;
   text-decoration: none;
   color: rgb(var(--color-button-text));
-  transition: box-shadow var(--duration-short) ease;
+  transition: box-shadow var(--duration-default) ease;
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
@@ -1260,7 +1260,7 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
-  transition: box-shadow var(--duration-short) ease;
+  transition: box-shadow var(--duration-default) ease;
 }
 
 .button:not([disabled]):hover::after,
@@ -2824,7 +2824,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span.header__active-menu-item::before {
-  transform: scale(0.8) translateY(0);
+  transform: scale(0.8);
 }
 
 details[open] > .header__menu-item {

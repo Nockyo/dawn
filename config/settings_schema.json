@@ -87,6 +87,18 @@
             "id": "shadow",
             "label": "t:settings_schema.colors.settings.shadow.label",
             "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "slide_button_text",
+            "label": "Texte boutton slider",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "color",
+            "id": "slide_button_background",
+            "label": "Arrière-plan boutton slider",
+            "default": "#D2111F"
           }
         ],
         "role": {

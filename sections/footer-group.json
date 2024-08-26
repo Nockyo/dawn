@@ -19,11 +19,25 @@
             "heading": "",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
           }
+        },
+        "newsletter_knncfH": {
+          "type": "newsletter",
+          "settings": {
+            "label": "Adresse e-mail"
+          }
+        },
+        "socials_dt9TrC": {
+          "type": "socials",
+          "settings": {
+            "socials_gap": 3
+          }
         }
       },
       "block_order": [
         "image_DQnVWp",
-        "footer-2"
+        "footer-2",
+        "newsletter_knncfH",
+        "socials_dt9TrC"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -38,7 +52,10 @@
         "margin_top": 48,
         "padding_top": 36,
         "padding_bottom": 36,
-        "width": 70
+        "width": 70,
+        "row_gap": 3,
+        "margin_top_newsletter": 0,
+        "margin_bottom_newsletter": 0
       }
     }
   },

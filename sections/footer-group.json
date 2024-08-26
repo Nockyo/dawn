@@ -31,13 +31,23 @@
           "settings": {
             "socials_gap": 3
           }
+        },
+        "link_list_QVmAHc": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer",
+            "link_direction": "row",
+            "link_list_gap": 1
+          }
         }
       },
       "block_order": [
         "image_DQnVWp",
         "footer-2",
         "newsletter_knncfH",
-        "socials_dt9TrC"
+        "socials_dt9TrC",
+        "link_list_QVmAHc"
       ],
       "settings": {
         "color_scheme": "scheme-1",

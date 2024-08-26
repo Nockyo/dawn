@@ -347,9 +347,9 @@
   background: transparent;
 }
 
-.header-localization .disclosure .localization-form__select:hover {
+/* .header-localization .disclosure .localization-form__select:hover {
   text-decoration: underline;
-}
+} */
 
 .header-localization .localization-form__select.link:after,
 .header-localization .localization-form__select.link:before {

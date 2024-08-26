@@ -7,6 +7,16 @@
   Usage:
   {% render 'header-search', input_id: 'My-Id'%}
 {% endcomment %}
+{% style %}
+  .search-modal__form .field:after {
+    box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset)
+      var(--inputs-shadow-blur-radius) rgba(var(--color-foreground));
+  }
+
+  .search-modal__form .field__label {
+    color: rgb(var(--color-foreground));
+  }
+{% endstyle %}
 
 <details-modal class="header__search">
   <details>

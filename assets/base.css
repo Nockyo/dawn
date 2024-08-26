@@ -216,6 +216,12 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   overflow: hidden;
 }
 
+@media screen and (min-width: 750px) {
+  .overflow-hidden {
+    width: calc(100vw - 14px);
+  }
+}
+
 .skip-to-content-link:focus {
   z-index: 9999;
   position: inherit;
@@ -2518,7 +2524,6 @@ input[type='checkbox'] {
 .header_icons-buttons {
   display: flex;
   stroke: rgba(var(--color-foreground));
-  stroke-width: 0.5px;
 }
 
 .header__icon:not(.header__icon--summary),
@@ -2551,6 +2556,11 @@ input[type='checkbox'] {
   fill: none;
   vertical-align: middle;
   transition: transform var(--duration-default) ease;
+}
+
+.header__icon .icon.icon-account {
+  height: 2.6rem;
+  width: 2.6rem;
 }
 
 .header__icon,
@@ -2789,17 +2799,20 @@ details[open] > .header__submenu {
   color: rgba(var(--color-foreground));
 }
 
-.header__menu-item:hover {
+.animation__underline-link:hover,
+.footer-block--menu .animation__underline-link:hover {
   color: rgb(var(--color-foreground));
 }
 
-.header__menu-item span {
+.animation__underline-link span,
+.footer-block--menu .animation__underline-link {
   transition: text-decoration var(--duration-short) ease;
   text-decoration: none;
   position: relative;
 }
 
-.header__menu-item span::before {
+.animation__underline-link span::before,
+.footer-block--menu .animation__underline-link::before {
   content: "";
   background: rgba(var(--color-foreground));
   position: absolute;
@@ -2810,20 +2823,34 @@ details[open] > .header__submenu {
   transition: transform var(--duration-default) ease-in-out;
 }
 
-.header__menu-item:hover span::before, 
-.header__menu-item span.header__active-menu-item::before {
+.footer-block--menu .animation__underline-link::before {
+  bottom: 0; 
+  height: 1px;
+}
+
+.disclosure__button.animation__underline-link span::before {
+  bottom: -1px; 
+}
+
+.animation__underline-link:hover span::before, 
+.animation__underline-link span.header__active-menu-item::before,
+.footer-block--menu .animation__underline-link:hover::before,
+.disclosure__button.animation__underline-link[aria-expanded="true"] span::before {
   transform: scaleX(1);
 }
 
-.header__menu-item span.header__active-menu-item {
+.animation__underline-link span.header__active-menu-item,
+.disclosure__button.animation__underline-link[aria-expanded="true"] span {
   transition: transform var(--duration-default) ease-in-out;
 }
 
-.header__menu-item:hover span.header__active-menu-item {
+.animation__underline-link:hover span.header__active-menu-item,
+.disclosure__button.animation__underline-link[aria-expanded="true"] span {
   transform: translateY(-2px);
 }
 
-.header__menu-item:hover span.header__active-menu-item::before {
+.animation__underline-link:hover span.header__active-menu-item::before,
+.disclosure__button.animation__underline-link[aria-expanded="true"] span::before {
   transform: scale(0.8);
 }
 

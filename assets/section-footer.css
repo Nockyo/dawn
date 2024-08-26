@@ -338,7 +338,7 @@
 
 .footer-block__details-content .list-menu__item--link,
 .copyright__content a {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-secondary));
 }
 
 .footer-block__details-content .list-menu__item--active {
@@ -370,10 +370,6 @@
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
     font-size: 1.4rem;
-  }
-
-  .footer-block__details-content > :first-child .list-menu__item--link {
-    padding-top: 0;
   }
 }
 

@@ -107,8 +107,17 @@
                     </div>
 
                   {%- when 'link_list' -%}
+                    <style>
+                      #Link-list-{{ section.id }}-{{ forloop.index }} {
+                        flex-direction: {{ block.settings.link_direction }};
+                        gap: {{ block.settings.link_list_gap }}rem;
+                      }
+                    </style>
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
+                      <ul
+                        id="Link-list-{{ section.id }}-{{ forloop.index }}"
+                        class="footer-block__details-content list-unstyled"
+                      >
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a
@@ -472,6 +481,32 @@
           "default": "footer",
           "label": "t:sections.footer.blocks.link_list.settings.menu.label",
           "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+        },
+        {
+          "type": "select",
+          "id": "link_direction",
+          "label": "Orientation des liens",
+          "options": [
+            {
+              "value": "column",
+              "label": "Vertical"
+            },
+            {
+              "value": "row",
+              "label": "Horizontal"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "range",
+          "id": "link_list_gap",
+          "min": 0,
+          "max": 10,
+          "step": 0.1,
+          "unit": "rem",
+          "label": "Espacement entre les liens",
+          "default": 1
         }
       ]
     },

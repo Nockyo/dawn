@@ -23,8 +23,7 @@
       }
     }
   {%- endstyle -%}
-{%- endif -%}
-
+{% endif %}
 <slideshow-component
   class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
@@ -101,6 +100,10 @@
       <style>
         #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
+        }
+
+        #Slide-{{ section.id }}-{{ forloop.index }} .banner__heading {
+          text-transform: {{ block.settings.heading_transform }};
         }
 
         @media screen and (min-width: 750px) {
@@ -424,6 +427,26 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_transform",
+          "options": [
+            {
+              "value": "none",
+              "label": "Normal"
+            },
+            {
+              "value": "uppercase",
+              "label": "Majuscules"
+            },
+            {
+              "value": "lowercase",
+              "label": "Minuscules"
+            }
+          ],
+          "default": "uppercase",
+          "label": "Style du titre"
         },
         {
           "type": "inline_richtext",

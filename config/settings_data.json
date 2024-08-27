@@ -32,7 +32,7 @@
     "inputs_shadow_blur": 0,
     "card_style": "standard",
     "card_image_padding": 0,
-    "card_text_alignment": "left",
+    "card_text_alignment": "center",
     "card_color_scheme": "scheme-2",
     "card_border_thickness": 0,
     "card_border_opacity": 10,
@@ -138,7 +138,9 @@
           "button": "#848484",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "slide_button_text": "#FFFFFF",
+          "slide_button_background": "#D2111F"
         }
       },
       "scheme-2": {
@@ -150,7 +152,9 @@
           "button": "#121212",
           "button_label": "#f3f3f3",
           "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "slide_button_text": "#FFFFFF",
+          "slide_button_background": "#D2111F"
         }
       },
       "scheme-3": {
@@ -162,7 +166,9 @@
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "slide_button_text": "#FFFFFF",
+          "slide_button_background": "#D2111F"
         }
       },
       "scheme-4": {
@@ -174,7 +180,9 @@
           "button": "#ffffff",
           "button_label": "#121212",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "slide_button_text": "#FFFFFF",
+          "slide_button_background": "#D2111F"
         }
       },
       "scheme-5": {
@@ -186,7 +194,9 @@
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "slide_button_text": "#FFFFFF",
+          "slide_button_background": "#D2111F"
         }
       }
     }

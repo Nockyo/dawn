@@ -265,8 +265,8 @@
 
 @media screen and (min-width: 750px) {
   .card__information {
-    padding-bottom: 1.7rem;
-    padding-top: 1.7rem;
+    padding-bottom: 2.2rem;
+    padding-top: 2.2rem;
   }
 }
 
@@ -471,15 +471,15 @@
 
 .card-information > * {
   line-height: calc(1 + 0.4 / var(--font-body-scale));
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-secondary));
 }
 
 .card-information > .price {
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-secondary));
 }
 
 .card--horizontal .card-information > .price {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-secondary));
 }
 
 .card-information > .rating {
@@ -495,7 +495,7 @@
 }
 
 .card-information > *:not(.visually-hidden:first-child) + *:not(.rating):not(.card__information-volume-pricing-note) {
-  margin-top: 0.7rem;
+  margin-top: 1.2rem;
 }
 
 .card-information .caption {

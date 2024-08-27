@@ -534,6 +534,50 @@
         "default": 0
       },
       {
+        "type": "header",
+        "content": "Texte"
+      },
+      {
+        "type": "select",
+        "id": "card_title_text-transform",
+        "options": [
+          {
+            "value": "none",
+            "label": "Aucun"
+          },
+          {
+            "value": "uppercase",
+            "label": "Majuscules"
+          },
+          {
+            "value": "lowercase",
+            "label": "Minuscules"
+          }
+        ],
+        "default": "none",
+        "label": "Style du titre"
+      },
+      {
+        "type": "select",
+        "id": "card_title_font-weight",
+        "options": [
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "Bold",
+            "label": "Gras"
+          },
+          {
+            "value": "Lighter",
+            "label": "Fin"
+          }
+        ],
+        "default": "normal",
+        "label": "Epaisseur du titre"
+      },
+      {
         "type": "select",
         "id": "card_text_alignment",
         "options": [
@@ -552,6 +596,10 @@
         ],
         "default": "left",
         "label": "t:settings_schema.global.settings.text_alignment.label"
+      },
+      {
+        "type": "header",
+        "content": "Couleurs"
       },
       {
         "type": "color_scheme",

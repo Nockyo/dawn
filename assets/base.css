@@ -1660,6 +1660,26 @@ details[open] > .share-button__fallback {
   border-radius: var(--inputs-radius);
 }
 
+.field.input__foreground-color::after {
+  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
+}
+
+.input__foreground-color .field__label {
+  color: rgb(var(--color-foreground));
+}
+
+div.field:has(.field__input:focus)::after {
+  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
+}
+
+div.field:has(.field__input:focus) label {
+  color: rgb(var(--color-foreground));
+}
+
+div.field:has(.field__input:focus) .icon-chevron-right-circle:before {
+  background: rgba(var(--color-foreground));
+}
+
 .localization-form__select:focus {
   outline: 0;
   box-shadow: none;

@@ -216,11 +216,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   overflow: hidden;
 }
 
-@media screen and (min-width: 750px) {
+
   .overflow-hidden {
     width: calc(100vw - 14px);
   }
-}
+
 
 .skip-to-content-link:focus {
   z-index: 9999;
@@ -2512,7 +2512,18 @@ input[type='checkbox'] {
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 0.8rem;
+}
+
+@media screen and (max-width: 749px) {
+  .header__icons {
+    margin-right: -1.2rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .header__icons {
+    padding-right: 0.8rem;
+  }
 }
 
 .header__icons .shopify-app-block {

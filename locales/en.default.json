@@ -249,8 +249,10 @@
     },
     "contact": {
       "form": {
+        "subject": "Subject",
         "title": "Contact form",
         "name": "Name",
+        "firstname": "Firstname",
         "email": "Email",
         "phone": "Phone number",
         "comment": "Comment",

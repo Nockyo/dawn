@@ -4,7 +4,29 @@
       "type": "main-page",
       "settings": {
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_gdbggV": {
+      "type": "rich-text",
+      "blocks": {
+        "text_7YNme4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Partagez des informations sur votre marque. Décrivez un produit, partagez des annonces ou souhaitez la bienvenue à vos clients dans votre boutique.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_7YNme4"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "form": {
@@ -20,6 +42,7 @@
   },
   "order": [
     "main",
+    "rich_text_gdbggV",
     "form"
   ]
 }

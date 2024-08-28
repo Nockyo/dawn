@@ -144,6 +144,26 @@
         "default": 100
       },
       {
+        "type": "select",
+        "id": "title_font-weight",
+        "options": [
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "bold",
+            "label": "Gras"
+          },
+          {
+            "value": "lighter",
+            "label": "Fin"
+          }
+        ],
+        "default": "bold",
+        "label": "Epaisseur des titres"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.typography.settings.header__2.content"
       },

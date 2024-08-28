@@ -51,6 +51,27 @@
           </li>
         </ul>
       {%- endif -%}
+      <div class="field input__foreground-color">
+        <div class="select">
+          <select
+            class="field__input select_select"
+            type="select"
+            id="ContactForm-subject"
+            name="contact[{{ 'templates.contact.form.subject' | t }}]"
+            placeholder="{{ 'templates.contact.form.subject' | t }}"
+          >
+            <option selected disabled value="">{{- 'templates.contact.form.subject' | t -}}</option>
+            <option value="infos">J'ai besoin d'informations à propos d'un article</option>
+            <option value="livraison">J'ai un problème de livraison</option>
+            <option value="retour">Je veux retourner un article</option>
+            <option value="collaboration">Un partenariat, une collaboration ?</option>
+            <option value="autre">Autre</option>
+          </select>
+          <label class="field__label" for="ContactForm-subject" style="visibility:hidden;">
+            {{- 'templates.contact.form.subject' | t -}}
+          </label>
+        </div>
+      </div>
       <div class="contact__fields">
         <div class="field input__foreground-color">
           <input
@@ -64,6 +85,20 @@
           >
           <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
         </div>
+        <div class="field input__foreground-color">
+          <input
+            class="field__input"
+            autocomplete="firstname"
+            type="text"
+            id="ContactForm-firstname"
+            name="contact[{{ 'templates.contact.form.firstname' | t }}]"
+            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.firstname }}{% endif %}"
+            placeholder="{{ 'templates.contact.form.firstname' | t }}"
+          >
+          <label class="field__label" for="ContactForm-firstname">{{ 'templates.contact.form.firstname' | t }}</label>
+        </div>
+      </div>
+      <div class="contact__fields">
         <div class="field input__foreground-color field--with-error">
           <input
             autocomplete="email"
@@ -96,19 +131,19 @@
             </small>
           {%- endif -%}
         </div>
-      </div>
-      <div class="field input__foreground-color">
-        <input
-          type="tel"
-          id="ContactForm-phone"
-          class="field__input"
-          autocomplete="tel"
-          name="contact[{{ 'templates.contact.form.phone' | t }}]"
-          pattern="[0-9\-]*"
-          value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-          placeholder="{{ 'templates.contact.form.phone' | t }}"
-        >
-        <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+        <div class="field input__foreground-color field--with-error">
+          <input
+            type="tel"
+            id="ContactForm-phone"
+            class="field__input"
+            autocomplete="tel"
+            name="contact[{{ 'templates.contact.form.phone' | t }}]"
+            pattern="[0-9\-]*"
+            value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+            placeholder="{{ 'templates.contact.form.phone' | t }}"
+          >
+          <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+        </div>
       </div>
       <div class="field input__foreground-color">
         <textarea
@@ -125,7 +160,7 @@
         </label>
       </div>
       <div class="contact__button">
-        <button type="submit" class="button">
+        <button type="submit" class="button input__foreground-color">
           {{ 'templates.contact.form.send' | t }}
         </button>
       </div>

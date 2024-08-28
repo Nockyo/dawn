@@ -757,6 +757,17 @@ summary::-webkit-details-marker {
 
 /* component-title */
 .title,
+.page-title {
+  font-weight: var(--title-font-weight);
+}
+
+.page-title {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title,
 .title-wrapper-with-link {
   margin: 3rem 0 2rem;
 }
@@ -783,7 +794,7 @@ summary::-webkit-details-marker {
 }
 
 .title--primary {
-  margin: 4rem 0;
+  margin: 0;
 }
 
 .title-wrapper--self-padded-tablet-down,
@@ -803,10 +814,6 @@ summary::-webkit-details-marker {
   .title,
   .title-wrapper-with-link {
     margin: 5rem 0 3rem;
-  }
-
-  .title--primary {
-    margin: 2rem 0;
   }
 
   .title-wrapper-with-link {
@@ -1233,6 +1240,10 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button), var(--alpha-button-background));
 }
 
+.button.input__foreground-color {
+  background-color: rgb(var(--color-foreground));
+}
+
 .button:before,
 .shopify-challenge__button:before,
 .customer button:before,
@@ -1269,6 +1280,12 @@ button.shopify-payment-button__button--unbranded {
   transition: box-shadow var(--duration-default) ease;
 }
 
+.button.input__foreground-color::after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--color-foreground));
+}
+
 .button:not([disabled]):hover::after,
 .shopify-challenge__button:hover::after,
 .customer button:hover::after,
@@ -1277,6 +1294,12 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
+}
+
+.button.input__foreground-color:not([disabled]):hover::after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-foreground));
 }
 
 .button--secondary:after {
@@ -1777,6 +1800,11 @@ div.field:has(.field__input:focus) .icon-chevron-right-circle:before {
 .customer .field input:-webkit-autofill {
   padding: 2.2rem 1.5rem 0.8rem 2rem;
   margin: var(--inputs-border-width);
+}
+
+.field__input.select_select {
+  padding: 1rem 1.5rem 0.8rem 1.8rem;
+  font-weight: bold;
 }
 
 .field__input::-webkit-search-cancel-button,

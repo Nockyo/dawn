@@ -882,7 +882,8 @@ summary::-webkit-details-marker {
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
-.grid.column-direction {
+.grid.column-direction,
+.title-wrapper-with-link.column {
   flex-direction: column;
   align-items: center;
 }

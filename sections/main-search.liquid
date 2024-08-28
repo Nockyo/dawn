@@ -21,7 +21,7 @@
 
   .template-search__search {
     margin: 0 auto 3.5rem;
-    max-width: 74.1rem;
+    max-width: 36rem;
   }
 
   .template-search__search .search {
@@ -66,7 +66,7 @@
 {% paginate search.results by 24 %}
   <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
     <div class="template-search__header page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      <h1 class="h2 center">
+      <h1 class="page-title h1 center">
         {%- if search.performed -%}
           {{- 'templates.search.title' | t -}}
         {%- else -%}
@@ -81,7 +81,7 @@
           <form action="{{ routes.search_url }}" method="get" role="search" class="search">
             <div class="field">
               <input
-                class="search__input field__input"
+                class="search__input field__input smaller__input"
                 id="Search-In-Template"
                 type="search"
                 name="q"
@@ -121,7 +121,7 @@
                 </svg>
               </button>
               <button type="submit" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                <svg class="icon icon-search" aria-hidden="true" focusable="false">
+                <svg class="icon icon-search stroke__foreground" aria-hidden="true" focusable="false">
                   <use xlink:href="#icon-search">
                 </svg>
               </button>

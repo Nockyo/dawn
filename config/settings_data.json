@@ -33,6 +33,8 @@
     "inputs_shadow_blur": 0,
     "card_style": "standard",
     "card_image_padding": 0,
+    "card_title_text-transform": "uppercase",
+    "card_title_font-weight": "Bold",
     "card_text_alignment": "center",
     "card_color_scheme": "scheme-2",
     "card_border_thickness": 0,
@@ -140,8 +142,8 @@
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
           "shadow": "#121212",
-          "slide_button_text": "#FFFFFF",
-          "slide_button_background": "#D2111F"
+          "slide_button_text": "#ffffff",
+          "slide_button_background": "#d2111f"
         }
       },
       "scheme-2": {
@@ -154,8 +156,8 @@
           "button_label": "#f3f3f3",
           "secondary_button_label": "#121212",
           "shadow": "#121212",
-          "slide_button_text": "#FFFFFF",
-          "slide_button_background": "#D2111F"
+          "slide_button_text": "#ffffff",
+          "slide_button_background": "#d2111f"
         }
       },
       "scheme-3": {
@@ -168,8 +170,8 @@
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212",
-          "slide_button_text": "#FFFFFF",
-          "slide_button_background": "#D2111F"
+          "slide_button_text": "#ffffff",
+          "slide_button_background": "#d2111f"
         }
       },
       "scheme-4": {
@@ -182,8 +184,8 @@
           "button_label": "#121212",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212",
-          "slide_button_text": "#FFFFFF",
-          "slide_button_background": "#D2111F"
+          "slide_button_text": "#ffffff",
+          "slide_button_background": "#d2111f"
         }
       },
       "scheme-5": {
@@ -196,8 +198,8 @@
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212",
-          "slide_button_text": "#FFFFFF",
-          "slide_button_background": "#D2111F"
+          "slide_button_text": "#ffffff",
+          "slide_button_background": "#d2111f"
         }
       }
     }

@@ -42,8 +42,6 @@ cart-items {
 
 .cart__items {
   position: relative;
-  padding-bottom: 3rem;
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
 .cart__items--disabled {
@@ -105,7 +103,6 @@ cart-items {
   .cart__items {
     grid-column-start: 1;
     grid-column-end: 3;
-    padding-bottom: 4rem;
   }
 
   .cart__contents > * + * {
@@ -179,6 +176,7 @@ cart-items {
 
 .cart__checkout-button {
   max-width: 36rem;
+  font-weight: bold;
 }
 
 .cart__ctas {
@@ -196,8 +194,9 @@ cart-items {
   }
 
   .tax-note {
-    margin-bottom: 2.2rem;
-    text-align: right;
+    margin-bottom: 1.8rem;
+    margin-top: 1rem;
+    text-align: left;
   }
 
   [data-shopify-buttoncontainer] {

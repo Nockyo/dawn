@@ -68,7 +68,7 @@
                     {{ 'sections.cart.headings.total' | t }}
                   </th>
                   <th
-                    class="cart-items__heading--wide cart-items__heading--quantity small-hide"
+                    class="cart-items__heading--wide cart-items__heading--quantity small-hide right"
                     colspan="1"
                     scope="col"
                   >
@@ -286,7 +286,7 @@
                               class="button button--tertiary"
                               aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
                             >
-                              {% render 'icon-remove' %}
+                              Supprimer
                             </a>
                           </cart-remove-button>
                         </div>

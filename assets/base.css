@@ -1939,10 +1939,10 @@ input[type='checkbox'] {
 .quantity {
   color: rgba(var(--color-foreground));
   position: relative;
-  width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  width: calc(11rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   display: flex;
   border-radius: var(--inputs-radius);
-  min-height: calc((var(--inputs-border-width) * 2) + 4rem);
+  min-height: calc((var(--inputs-border-width) * 2) + 3.2rem);
 }
 
 .quantity:after {
@@ -1993,7 +1993,7 @@ input[type='checkbox'] {
 }
 
 .quantity__button {
-  width: calc(4rem / var(--font-body-scale));
+  width: calc(3rem / var(--font-body-scale));
   flex-shrink: 0;
   font-size: 1.8rem;
   border: 0;

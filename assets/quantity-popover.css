@@ -147,10 +147,6 @@ quantity-popover .quantity__rules span:first-of-type {
   }
 }
 
-quantity-popover .quantity {
-  background: rgb(var(--color-secondary));
-}
-
 quantity-popover .quantity__rules {
   margin-left: 0.8rem;
 }
@@ -159,11 +155,10 @@ quantity-popover .quantity__rules .divider:nth-child(2)::before {
   content: none;
 }
 
-quantity-popover .quantity__button:not(:focus-visible):not(.focused),
-quantity-popover .quantity__input:not(:focus-visible):not(.focused) {
+quantity-popover .quantity__button:not(:focus-visible):not(.focused) {
   background-color: initial;
 }
 
-quantity-popover .quantity__input:not(:focus-visible):not(.focused) {
+.quantity__input:not(:focus-visible):not(.focused) {
   background-color: rgba(var(--color-background));
 }

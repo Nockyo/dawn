@@ -13,6 +13,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  details {
+    height: 53px;
+    transition: height var(--duration-default) ease;
+  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -71,7 +76,7 @@
           <div class="grid__item">
             {%- for block in section.blocks -%}
               <div
-                class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
+                class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %} accordion__animateScrollHeight"
                 {{ block.shopify_attributes }}
               >
                 <details
@@ -82,7 +87,7 @@
                 >
                   <summary id="Summary-{{ block.id }}-{{ section.id }}">
                     {% render 'icon-accordion', icon: block.settings.icon %}
-                    <h3 class="accordion__title inline-richtext h4">
+                    <h3 class="accordion__title inline-richtext h3">
                       {{ block.settings.heading | default: block.settings.page.title | escape }}
                     </h3>
                     {% render 'icon-caret' %}

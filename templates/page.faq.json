@@ -1,0 +1,66 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_ADjxjg": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_piABhA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Rangée réductible",
+            "icon": "none",
+            "row_content": "<p>Trouvez la réponse à votre question avec notre gamme de produits innovants.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_X8nUCb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Rangée réductible",
+            "icon": "none",
+            "row_content": "<p>Des solutions innovantes pour répondre à toutes vos attentes.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Xgfbim": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Rangée réductible",
+            "icon": "none",
+            "row_content": "<p>Des solutions délicieuses pour une alimentation saine et équilibrée.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_piABhA",
+        "collapsible_row_X8nUCb",
+        "collapsible_row_Xgfbim"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Contenu réductible",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_ADjxjg"
+  ]
+}

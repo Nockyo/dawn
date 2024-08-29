@@ -91,9 +91,31 @@ function percentageSeen(element) {
   return Math.round(percentage);
 }
 
+animateAccordion = () => {
+  if (document.querySelector('.accordion')) {
+    let details = document.querySelectorAll('.accordion__animateScrollHeight details');
+
+    details.forEach((content) => {
+      content.addEventListener('click', function (e) {
+        let accordion_content_height = document.querySelector('.accordion__content').offsetHeight;
+        let newHeight = content.offsetHeight;
+
+        if (content.getAttribute('open') === null) {
+          newHeight += accordion_content_height;
+        } else {
+          newHeight -= accordion_content_height;
+        }
+
+        content.style.height = newHeight + 'px';
+      });
+    });
+  }
+};
+
 window.addEventListener('DOMContentLoaded', () => {
   initializeScrollAnimationTrigger();
   initializeScrollZoomAnimationTrigger();
+  animateAccordion();
 });
 
 if (Shopify.designMode) {

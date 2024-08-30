@@ -2430,7 +2430,7 @@ input[type='checkbox'] {
   align-items: center;
 }
 
-.header a, .header button {
+.header a, .header button, .animation__underline-link span {
   font-weight: 600;
 }
 
@@ -2941,23 +2941,17 @@ details[open] > .header__submenu {
   transform: scaleX(1);
 }
 
-.animation__underline-link span.header__active-menu-item,
-.disclosure__button.animation__underline-link[aria-expanded="true"] span {
+.animation__underline-link:hover span.header__active-menu-item,
+.disclosure__button.animation__underline-link[aria-expanded="true"] span,
+.header__menu-item.animation__underline-link[aria-expanded="true"] span {
+  transform: translateY(-2px);
   transition: transform var(--duration-default) ease-in-out;
 }
 
-.animation__underline-link:hover span.header__active-menu-item,
-.disclosure__button.animation__underline-link[aria-expanded="true"] span {
-  transform: translateY(-2px);
-}
-
 .animation__underline-link:hover span.header__active-menu-item::before,
-.disclosure__button.animation__underline-link[aria-expanded="true"] span::before {
+.disclosure__button.animation__underline-link[aria-expanded="true"] span::before,
+.header__menu-item.animation__underline-link[aria-expanded="true"] span::before {
   transform: scale(0.8);
-}
-
-details[open] > .header__menu-item {
-  text-decoration: underline;
 }
 
 details[open]:hover > .header__menu-item {
@@ -2985,6 +2979,13 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__submenu.list-menu {
   padding: 1rem 0;
+}
+
+.disclosure .disclosure__list-wrapper,
+.header__submenu.list-menu {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: none;
 }
 
 .header__submenu .header__submenu {
@@ -3029,7 +3030,7 @@ details-disclosure > details {
 
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(2.1rem);
   }
 }
 

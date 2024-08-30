@@ -3,6 +3,7 @@
   height: 100%;
   position: relative;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .card {
@@ -404,6 +405,16 @@
   .underline-links-hover:hover a {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
+  }
+
+  .card__heading, 
+  .card__information {
+    transition: transform var(--duration-long) ease;
+  }
+
+  .card-wrapper:hover .card__heading,
+  .card-wrapper:hover .card__information {
+    transform: translateY(0.1rem);
   }
 }
 

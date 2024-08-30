@@ -406,7 +406,7 @@
   bottom: initial;
   top: 100%;
   right: 0;
-  transform: translateY(0);
+  transform: translateY(2.3rem);
 }
 
 /* Menu drawer */

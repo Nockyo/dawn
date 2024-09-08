@@ -51,7 +51,8 @@
     width: calc(100% + 0.2rem);
   }
 
-  .template-search .predictive-search {
+  .template-search .predictive-search,
+  .predictive-search.predictive-search--header {
     border-top: none;
     left: calc(-1 * (74.1rem - 36rem)/2);
     width: calc(74.1rem + 0.2rem);

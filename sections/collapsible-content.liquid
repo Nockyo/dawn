@@ -14,7 +14,7 @@
     }
   }
 
-  details {
+  .faq details {
     height: 53px;
     transition: height var(--duration-default) ease;
   }
@@ -76,7 +76,7 @@
           <div class="grid__item">
             {%- for block in section.blocks -%}
               <div
-                class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %} accordion__animateScrollHeight"
+                class="faq accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %} accordion__animateScrollHeight"
                 {{ block.shopify_attributes }}
               >
                 <details
